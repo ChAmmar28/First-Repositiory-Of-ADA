@@ -186,7 +186,7 @@ header {
 main {
   padding: 1% 2%;
   .sec {
-    margin-top: 25px;
+    margin-top: 20px;
     width: 100%;
     .swiper-style {
       height: 50%;
@@ -197,9 +197,13 @@ main {
       }
     }
     .card-box {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
       .card {
-        width: 250px;
+        width: 240px;
         height: 475px;
+        margin-top: 20px;
         font-family: "Nunito", sans-serif;
         display: flex;
         flex-direction: column;
@@ -270,24 +274,31 @@ main {
           .card-decsription {
             .decsription-text {
               font-size: $sl-font;
-              line-height: 20px;
-              p:last-child {
-                i {
-                  font-size: $sl-font;
-                  margin-right: 2px;
+              display: flex;
+              .decsription {
+                .neg-shadow {
+                  box-shadow: inset -15px 0px 10px $main-white;
+                  p {
+                    position: relative;
+                    width: 100%;
+                    z-index: -2;
+                  }
+                }
+                p {
+                  i {
+                    font-size: $sl-font;
+                    margin-right: 2px;
+                  }
                 }
               }
             }
-            .neg-shadow {
-              height: 100%;
-              box-shadow: 0 0 5px red;
-            }
           }
           button {
+            margin-top: 15px;
             background-color: $main-pink;
             border-radius: $border-radius-btn;
             border: none;
-            padding: 8px 15px;
+            padding: 9px 17px;
             color: $main-white;
             font-size: $sl-font;
             font-weight: 700;

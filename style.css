@@ -150,7 +150,7 @@ main {
   padding: 1% 2%;
 }
 main .sec {
-  margin-top: 25px;
+  margin-top: 20px;
   width: 100%;
 }
 main .sec .swiper-style {
@@ -161,9 +161,15 @@ main .sec .swiper-style img {
   height: 100%;
   border-radius: 20px;
 }
+main .sec .card-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 main .sec .card-box .card {
-  width: 250px;
+  width: 240px;
   height: 475px;
+  margin-top: 20px;
   font-family: "Nunito", sans-serif;
   display: flex;
   flex-direction: column;
@@ -228,21 +234,26 @@ main .sec .card-box .card .card-bottom .card-bottom-info .date {
 }
 main .sec .card-box .card .card-bottom .card-decsription .decsription-text {
   font-size: 15px;
-  line-height: 20px;
+  display: flex;
 }
-main .sec .card-box .card .card-bottom .card-decsription .decsription-text p:last-child i {
+main .sec .card-box .card .card-bottom .card-decsription .decsription-text .decsription .neg-shadow {
+  box-shadow: inset -15px 0px 10px #ffffff;
+}
+main .sec .card-box .card .card-bottom .card-decsription .decsription-text .decsription .neg-shadow p {
+  position: relative;
+  width: 100%;
+  z-index: -2;
+}
+main .sec .card-box .card .card-bottom .card-decsription .decsription-text .decsription p i {
   font-size: 15px;
   margin-right: 2px;
 }
-main .sec .card-box .card .card-bottom .card-decsription .neg-shadow {
-  height: 100%;
-  box-shadow: 0 0 5px red;
-}
 main .sec .card-box .card .card-bottom button {
+  margin-top: 15px;
   background-color: #ca11ac;
   border-radius: 5px;
   border: none;
-  padding: 8px 15px;
+  padding: 9px 17px;
   color: #ffffff;
   font-size: 15px;
   font-weight: 700;
