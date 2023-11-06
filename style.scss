@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+//  colors
+$main-purple: #491174;
+$main-light-purple: #9400ef;
+$main-purple-tr: #9300ef98;
+$main-pink: #ca11ac;
+$main-black: #000000;
+$main-white: #ffffff;
+$main-grey: #dddddd;
+$main-light-grey: #e5e1ef;
+$main-light-purple-x-gray: #c57ef4;
+$main-grey-tp: #ffffff56;
+$main-yellow: yellow;
+// border
+$border-radius-btn: 5px;
+$border-radius: 20px;
+$border-radius-head: 35px;
+// font
+$s-font: 10px;
+$sl-font: 15px;
+$l-font: 20px;
+$xll-font: 40px;
+$xl-font: 50px;
+$x-font: 60px;
+$xs-font: 30px;
+$xss-font: 25px;
+$head-a-left-size: 15px;
+$head-a-right-size: 19px;
+//icon
+$icon-size: 35px;
+// card
+header {
+  background-image: url(https://global.wildberries.ru/assets/images/shopping-day/shopping-day-2800x226.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: $border-radius-head;
+  border-bottom-right-radius: $border-radius-head;
+  padding: 1% 2%;
+  .head-info {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    .head-nav {
+      width: 20%;
+      display: flex;
+      justify-content: space-between;
+      a {
+        div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: $l-font;
+          color: $main-white;
+          i {
+            font-size: $icon-size;
+          }
+        }
+      }
+    }
+  }
+  .head-info:first-child {
+    .top-left-info {
+      a {
+        color: $main-grey;
+        font-family: "Nunito", sans-serif;
+        font-size: $head-a-left-size;
+      }
+      a:last-child {
+        margin-left: 10px;
+      }
+    }
+    .top-right-info {
+      display: flex;
+      a {
+        text-align: center;
+        margin-left: 2px;
+        div {
+          display: flex;
+          align-items: center;
+          color: $main-grey;
+          p {
+            margin-left: 5px;
+            font-family: "Nunito", sans-serif;
+            font-size: $head-a-right-size;
+          }
+        }
+      }
+      a:last-child {
+        margin-left: 15px;
+        img {
+          width: 15px;
+          height: 15px;
+          border-radius: 7.5px;
+        }
+      }
+    }
+  }
+  .head-info:last-child {
+    .logo {
+      position: relative;
+      h3 {
+        font-size: $xll-font;
+        font-family: "Nunito", sans-serif;
+        font-weight: 600;
+        color: $main-white;
+      }
+      div {
+        text-align: center;
+      }
+      .text-logo {
+        div:last-child {
+          background-color: $main-yellow;
+          transform: rotate(-0.0075turn);
+          position: absolute;
+          top: 40px;
+          right: 45px;
+          padding: 0px 5px;
+          p {
+            font-size: $sl-font;
+            font-family: "Nunito", sans-serif;
+            font-weight: 700;
+            color: $main-black;
+          }
+        }
+      }
+    }
+    .head-btn {
+      display: flex;
+      width: 60px;
+      button {
+        background-color: $main-grey-tp;
+        width: 100%;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: $l-font;
+        color: $main-white;
+        border-radius: $border-radius;
+        i {
+          font-size: $icon-size;
+          color: $main-white;
+        }
+      }
+    }
+    .search-bar {
+      width: 50%;
+      background-color: $main-white;
+      border-radius: $border-radius;
+      form {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        input {
+          width: 80%;
+          height: 100%;
+          border: none;
+          font-size: 35px;
+          outline: none;
+        }
+        button {
+          width: 10%;
+          height: 100%;
+          border: none;
+          border-radius: $border-radius;
+          background-color: transparent;
+          i {
+            font-size: $icon-size;
+            color: $main-light-purple;
+          }
+        }
+      }
+    }
+  }
+}
+main {
+  padding: 1% 2%;
+  .sec {
+    margin-top: 25px;
+    width: 100%;
+    .swiper-style {
+      height: 50%;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: $border-radius;
+      }
+    }
+    .card-box {
+      .card {
+        width: 250px;
+        height: 475px;
+        font-family: "Nunito", sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .card-top {
+          height: 70%;
+          width: 100%;
+          background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXx_GgFUtzO4VrIM0IGtl2dIhy054PTSzgGA&usqp=CAU);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          border-radius: $border-radius;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          button {
+            background-color: transparent;
+            border: none;
+            margin: 10px;
+            font-family: "Nunito", sans-serif;
+          }
+          button:first-child {
+            align-self: end;
+            color: $main-light-grey;
+            font-size: $l-font;
+          }
+          button:last-child {
+            width: 70%;
+            padding: 8px 5px;
+            background-color: $main-grey-tp;
+            border-radius: $border-radius-btn;
+            font-size: $sl-font;
+            color: $main-white;
+            font-weight: 600;
+            display: none;
+          }
+        }
+        .card-bottom {
+          .card-bottom-info {
+            .card-price {
+              display: flex;
+              align-items: center;
+              font-weight: 400;
+              p {
+                margin: 0 5px 0 0;
+              }
+              p:first-child {
+                font-size: $xs-font;
+                font-weight: 700;
+              }
+              p:nth-child(2) {
+                background-color: $main-light-grey;
+                color: $main-purple;
+                padding: 1px;
+              }
+              p:last-child {
+                del {
+                  font-size: $sl-font;
+                }
+              }
+            }
+            .date {
+              font-weight: 700;
+            }
+          }
+
+          .card-decsription {
+            .decsription-text {
+              font-size: $sl-font;
+              line-height: 20px;
+              p:last-child {
+                i {
+                  font-size: $sl-font;
+                  margin-right: 2px;
+                }
+              }
+            }
+            .neg-shadow {
+              height: 100%;
+              box-shadow: 0 0 5px red;
+            }
+          }
+          button {
+            background-color: $main-pink;
+            border-radius: $border-radius-btn;
+            border: none;
+            padding: 5px 20px;
+            color: $main-white;
+            font-size: $sl-font;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
