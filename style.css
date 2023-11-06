@@ -242,8 +242,9 @@ main .sec .card-box .card .card-bottom button {
   background-color: #ca11ac;
   border-radius: 5px;
   border: none;
-  padding: 5px 20px;
+  padding: 8px 15px;
   color: #ffffff;
   font-size: 15px;
   font-weight: 700;
+  letter-spacing: 1px;
 }/*# sourceMappingURL=style.css.map */
