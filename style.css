@@ -100,9 +100,14 @@ header .head-info:last-child .head-btn {
   display: flex;
   width: 60px;
 }
-header .head-info:last-child .head-btn button {
+header .head-info:last-child .head-btn a {
+  width: 100%;
+  height: 100%;
+}
+header .head-info:last-child .head-btn a button {
   background-color: rgba(255, 255, 255, 0.337254902);
   width: 100%;
+  height: 100%;
   border: none;
   display: flex;
   align-items: center;
@@ -111,7 +116,7 @@ header .head-info:last-child .head-btn button {
   color: #ffffff;
   border-radius: 20px;
 }
-header .head-info:last-child .head-btn button i {
+header .head-info:last-child .head-btn a button i {
   font-size: 35px;
   color: #ffffff;
 }
@@ -163,7 +168,7 @@ main .sec .swiper-style img {
 }
 main .sec .card-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 main .sec .card-box .card {

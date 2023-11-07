@@ -135,19 +135,24 @@ header {
     .head-btn {
       display: flex;
       width: 60px;
-      button {
-        background-color: $main-grey-tp;
+      a {
         width: 100%;
-        border: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: $l-font;
-        color: $main-white;
-        border-radius: $border-radius;
-        i {
-          font-size: $icon-size;
+        height: 100%;
+        button {
+          background-color: $main-grey-tp;
+          width: 100%;
+          height: 100%;
+          border: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: $l-font;
           color: $main-white;
+          border-radius: $border-radius;
+          i {
+            font-size: $icon-size;
+            color: $main-white;
+          }
         }
       }
     }
@@ -198,7 +203,7 @@ main {
     }
     .card-box {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       flex-wrap: wrap;
       .card {
         width: 240px;
