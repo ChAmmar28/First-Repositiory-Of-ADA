@@ -151,12 +151,9 @@ header .head-info:last-child .search-bar form button i {
   color: #9400ef;
 }
 
-main {
-  padding: 1% 2%;
-}
 main .sec {
-  margin-top: 20px;
   width: 100%;
+  padding: 2.5% 2%;
 }
 main .sec .swiper-style {
   height: 50%;
@@ -168,7 +165,7 @@ main .sec .swiper-style img {
 }
 main .sec .card-box {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 main .sec .card-box .card {
@@ -178,7 +175,7 @@ main .sec .card-box .card {
   font-family: "Nunito", sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 main .sec .card-box .card .card-top {
   height: 70%;

@@ -189,10 +189,9 @@ header {
   }
 }
 main {
-  padding: 1% 2%;
   .sec {
-    margin-top: 20px;
     width: 100%;
+    padding: 2.5% 2%;
     .swiper-style {
       height: 50%;
       img {
@@ -203,8 +202,9 @@ main {
     }
     .card-box {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
       flex-wrap: wrap;
+
       .card {
         width: 240px;
         height: 475px;
@@ -212,7 +212,7 @@ main {
         font-family: "Nunito", sans-serif;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-evenly;
         .card-top {
           height: 70%;
           width: 100%;
